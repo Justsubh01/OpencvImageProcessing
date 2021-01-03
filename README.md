@@ -10,7 +10,7 @@ Topics covered in this repositry are given below:-
 <summary>
 1.Geometric Translation.</summary>
 
-* Image translation,rotation, scaling
+* <a href="https://github.com/Justsubh01/OpencvImageProcessing/tree/master/Geometric%20Translation/Image%20translation%2Crotation%2C%20scaling">Image translation,rotation, scaling</a>
 
 * Color Spaces
 * Affine and Projective transformations
