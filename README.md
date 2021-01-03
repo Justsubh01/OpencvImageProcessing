@@ -1,6 +1,5 @@
 <center><h1> Image and Video Processing(OpenCV)</h1></center>
 
----
 ## Index
 
 This repositry holds image and video processing related programs, All programs written in **Python 3.8.5** and the addition libraries used in programs are **OpenCV 4.4.0** and **Numpy 1.19.4**.
