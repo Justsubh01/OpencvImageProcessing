@@ -1,4 +1,4 @@
-<center><h1>Image Translation rotation and Scaling.</h1></center>
+<center><h1>Image Translation, rotation and Scaling.</h1></center>
 
 In this program i used OpenCv library for **image translation** and **scaling**.
 
