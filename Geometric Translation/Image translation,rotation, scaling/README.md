@@ -29,14 +29,19 @@ So after create a matrix , I am using the function, warpAffine, to apply to imag
 ```
 img_translation = cv.warpAffine(img_scale, translation_mat, (num_cols,num_rows))
 ```
+![Translate_image](../../images/Translation_screenshot_06.01.2021.png)
+
  The image translation function does not increase the frame size, after appling warpAffine image got cropped. For preventing it I applied warpAffine one more time with different translation matrix, and increase the size of frame,
 
  ```
  translation_matrix = np.float32([[1,0, 0], [0, 1, 0]])
 scaled_frame_img = cv.warpAffine(img_translation, translation_matrix, (num_cols + 70, num_rows + 70))
  ```
+![fixed_frame](../../images/Translation_image_screenshot_06.01.2021.png)
 
 Rotation:- Rotation is also a form of translation,OpenCv provides closer control over the creation of this matrix through the function, getRotaionMatrix2D.
+
+![Rotated_image](../../images/Rotation_screenshot_06.01.2021.png)
 
 ```
 rotation_mat = cv.getRotationMatrix2D((num_cols, num_rows), 30, 1) 
