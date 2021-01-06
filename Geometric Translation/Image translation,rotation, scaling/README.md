@@ -1,15 +1,17 @@
-<center><h1>Image Translation rotation and Scaling.</h1></center>
+<center><h1>Image Translation, rotation and Scaling.</h1></center>
 
 In this program i used OpenCv library for **image translation** and **scaling**.
 
-* **Image Scaling**: Scaling means resizing an image which means an image is made bigger or smaller in x- or/and  y-direction. I use Opencv's **resize()** for resizing the image, In resize operation there are multiple ways to fill the pixel values, when we are enlarging an image, we need to fill up the pixel values in between pixel location,When we are shrinking the image , we need to take the best represntative value.When we are scaling by a non-integer value, we need to interpolate values appropriately, so that the
+**Image Scaling=>** Scaling means resizing an image which means an image is made bigger or smaller in x- or/and  y-direction. I use Opencv's **resize()** for resizing the image, In resize operation there are multiple ways to fill the pixel values, when we are enlarging an image, we need to fill up the pixel values in between pixel location,When we are shrinking the image , we need to take the best represntative value.When we are scaling by a non-integer value, we need to interpolate values appropriately, so that the
 quality of the image is maintained.When we enlarging the image we can use linear or cubic interpolation.
 
-In this program i am doing Inter_AREA interpolation for shrinking the image,
+In this program i am doing INTER_AREA interpolation for shrinking the image,
 
 ```
 img_scale = cv.resize(img, (640,480), interpolation=cv.INTER_AREA)
 ```
+---
+
 **Image Translation=>** In image translation the translate function perform a geometric transfromation which maps the position of each image element in an input image into a new position in an output image.
 
 
@@ -37,9 +39,13 @@ img_translation = cv.warpAffine(img_scale, translation_mat, (num_cols,num_rows))
  translation_matrix = np.float32([[1,0, 0], [0, 1, 0]])
 scaled_frame_img = cv.warpAffine(img_translation, translation_matrix, (num_cols + 70, num_rows + 70))
  ```
+<<<<<<< HEAD
 ![fixed_frame](../../images/Translation_image_screenshot_06.01.2021.png)
+=======
+ ---
+>>>>>>> 17de6b987df9959a60739978826a544e62fa6b01
 
-Rotation:- Rotation is also a form of translation,OpenCv provides closer control over the creation of this matrix through the function, getRotaionMatrix2D.
+**Rotation=>** Rotation is also a form of translation,OpenCv provides closer control over the creation of this matrix through the function, getRotaionMatrix2D.
 
 ![Rotated_image](../../images/Rotation_screenshot_06.01.2021.png)
 
