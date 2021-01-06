@@ -36,8 +36,9 @@ translation_mat = np.float32([[1,0, int(0.5*num_cols -100)], [0,1,int(0.5*num_ro
 #Create rotation matrix for give angle and points 
 rotation_mat = cv.getRotationMatrix2D((num_cols, num_rows), 30, 1) 
 img_trans = cv.warpAffine(img_scale, translation_mat,(2*num_cols,2*num_rows))
-img_rotation = cv.warpAffine(img_trans, rotation_mat, (2*num_cols-426,2*num_rows-226))
 # lets make frame bigger
+img_rotation = cv.warpAffine(img_trans, rotation_mat, (2*num_cols-426,2*num_rows-226))
+
 
 # show Scaled image 
 cv.imshow('Scaled Image',img_scale)
