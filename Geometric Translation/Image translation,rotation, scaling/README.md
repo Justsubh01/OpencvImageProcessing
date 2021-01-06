@@ -10,6 +10,8 @@ In this program i am doing INTER_AREA interpolation for shrinking the image,
 ```
 img_scale = cv.resize(img, (640,480), interpolation=cv.INTER_AREA)
 ```
+---
+
 **Image Translation=>** In image translation the translate function perform a geometric transfromation which maps the position of each image element in an input image into a new position in an output image.
 
 
@@ -35,6 +37,7 @@ img_translation = cv.warpAffine(img_scale, translation_mat, (num_cols,num_rows))
  translation_matrix = np.float32([[1,0, 0], [0, 1, 0]])
 scaled_frame_img = cv.warpAffine(img_translation, translation_matrix, (num_cols + 70, num_rows + 70))
  ```
+ ---
 
 Rotation:- Rotation is also a form of translation,OpenCv provides closer control over the creation of this matrix through the function, getRotaionMatrix2D.
 
