@@ -39,9 +39,8 @@ img_translation = cv.warpAffine(img_scale, translation_mat, (num_cols,num_rows))
  translation_matrix = np.float32([[1,0, 0], [0, 1, 0]])
 scaled_frame_img = cv.warpAffine(img_translation, translation_matrix, (num_cols + 70, num_rows + 70))
  ```
-<<<<<<< HEAD
 ![fixed_frame](../../images/Translation_image_screenshot_06.01.2021.png)
-=======
+
  ---
 >>>>>>> 17de6b987df9959a60739978826a544e62fa6b01
 
