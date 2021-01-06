@@ -26,14 +26,7 @@ Topics covered in this repositry are given below:-
 * Erosion dilation and Erode
 </details>
 
-<details close>
-<summary>
-3. Cartoonizing an Image</summary>
 
-* Keyboard input
-* Mouse Input
-* Cartoonize and Sketch effect
-</details>
 
 
 ---
