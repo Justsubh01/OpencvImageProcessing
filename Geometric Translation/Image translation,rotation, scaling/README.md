@@ -2,7 +2,7 @@
 
 In this program i used OpenCv library for **image translation** and **scaling**.
 
-* **Image Scaling**: Scaling means resizing an image which means an image is made bigger or smaller in x- or/and  y-direction. I use Opencv's **resize()** for resizing the image, In resize operation there are multiple ways to fill the pixel values, when we are enlarging an image, we need to fill up the pixel values in between pixel location,When we are shrinking the image , we need to take the best represntative value.When we are scaling by a non-integer value, we need to interpolate values appropriately, so that the
+**Image Scaling=>** Scaling means resizing an image which means an image is made bigger or smaller in x- or/and  y-direction. I use Opencv's **resize()** for resizing the image, In resize operation there are multiple ways to fill the pixel values, when we are enlarging an image, we need to fill up the pixel values in between pixel location,When we are shrinking the image , we need to take the best represntative value.When we are scaling by a non-integer value, we need to interpolate values appropriately, so that the
 quality of the image is maintained.When we enlarging the image we can use linear or cubic interpolation.
 
 In this program i am doing INTER_AREA interpolation for shrinking the image,
@@ -39,7 +39,7 @@ scaled_frame_img = cv.warpAffine(img_translation, translation_matrix, (num_cols 
  ```
  ---
 
-Rotation:- Rotation is also a form of translation,OpenCv provides closer control over the creation of this matrix through the function, getRotaionMatrix2D.
+**Rotation=>** Rotation is also a form of translation,OpenCv provides closer control over the creation of this matrix through the function, getRotaionMatrix2D.
 
 ```
 rotation_mat = cv.getRotationMatrix2D((num_cols, num_rows), 30, 1) 
