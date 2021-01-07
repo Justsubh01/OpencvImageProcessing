@@ -4,7 +4,7 @@ In computer vision and image processing, color space refers to a special way of 
 
 In OpenCv there are many different color spaces available, Some of the more popular color spaces are RGB,YUV,HSV and so on.
 
-*** RGB=>** Its probably the most popular color space. It stands for red, green and blue. Every pixel value is represented as a tuple of three numbers corresponding to red, green and blue, each value ranges between 0 and 255.
+***RGB=>** Its probably the most popular color space. It stands for red, green and blue. Every pixel value is represented as a tuple of three numbers corresponding to red, green and blue, each value ranges between 0 and 255.
 
 **YUV=>** Even though RGB is good for many purposes, it tends to be very limited for many real life applications. People started thinking about different methods to separate the intensity information from the color information. Hence, they came up with the YUV color space. Y refers to the luminance or intensity, and U/V channels represent color information. This works well in many applications because the human visual system perceives intensity information very differently from color information.
 
