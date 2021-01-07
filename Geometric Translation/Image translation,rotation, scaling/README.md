@@ -39,9 +39,8 @@ img_translation = cv.warpAffine(img_scale, translation_mat, (num_cols,num_rows))
  translation_matrix = np.float32([[1,0, 0], [0, 1, 0]])
 scaled_frame_img = cv.warpAffine(img_translation, translation_matrix, (num_cols + 70, num_rows + 70))
  ```
+ 
 ![fixed_frame](../../images/Translation_image_screenshot_06.01.2021.png)
-
- ---
 
 **Rotation=>** Rotation is also a form of translation,OpenCv provides closer control over the creation of this matrix through the function, getRotaionMatrix2D.
 
