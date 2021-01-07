@@ -26,7 +26,7 @@ Here, translation_mat is used as a translation matrix. and I am shifting the ima
 ```
 translation_mat = np.float32([[1,0,50], [0,1,50]])
 ```
-So after create a matrix , I am using the function, warpAffine, to apply to image.
+So after creating the matrix , I am using the warpAffine function, to apply to image translation.
 
 ```
 img_translation = cv.warpAffine(img_scale, translation_mat, (num_cols,num_rows))
@@ -42,12 +42,28 @@ scaled_frame_img = cv.warpAffine(img_translation, translation_matrix, (num_cols 
  
 ![fixed_frame](../../images/Translation_image_screenshot_06.01.2021.png)
 
+<<<<<<< HEAD
 **Rotation=>** Rotation is also a form of translation,OpenCv provides closer control over the creation of this matrix through the function, getRotaionMatrix2D.
+=======
+ ---
+
+**Rotation=>** Rotation is also a form of translation,OpenCv provides closer control over the creation of this matrix through the function, getRotaionMatrix2D.OpenCV provides closer control over the creation of this matrix through the function, getRotationMatrix2D . We can specify the point around which the image would be rotated, the angle of rotation in degrees, and a scaling factor for the image. Once we have the transformation matrix, we can use the warpAffine function to apply this matrix to any image.
+>>>>>>> 0b7310f23773bb1e582989e0dec7943334c2ae60
+
+
+```
+# Create matrix translation_mat for rotation
+translation_mat = np.float32([[1,0, int(0.5*num_cols -100)], [0,1,int(0.5*num_rows-185)]])
+#Create rotation matrix for give angle and points 
+rotation_mat = cv.getRotationMatrix2D((num_cols, num_rows), 30, 1) 
+img_trans = cv.warpAffine(img_scale, translation_mat,(2*num_cols,2*num_rows))
+# lets make frame bigger
+img_rotation = cv.warpAffine(img_trans, rotation_mat, (2*num_cols-426,2*num_rows-226))
+
+```
 
 ![Rotated_image](../../images/Rotation_screenshot_06.01.2021.png)
 
-```
-rotation_mat = cv.getRotationMatrix2D((num_cols, num_rows), 30, 1) 
-```
+
 Here we can specify the point around which the image would be rotated, the angle of rotation in degree, and scaling facetor for image.
 
