@@ -42,9 +42,12 @@ scaled_frame_img = cv.warpAffine(img_translation, translation_matrix, (num_cols 
  
 ![fixed_frame](../../images/Translation_image_screenshot_06.01.2021.png)
 
+<<<<<<< HEAD
 
 **Rotation=>** Rotation is also a form of translation,OpenCv provides closer control over the creation of this matrix through the function, getRotaionMatrix2D.
 
+=======
+>>>>>>> 3b65076c7c9cde173b5320cf4e0c524abbe37744
  ---
 
 **Rotation=>** Rotation is also a form of translation,OpenCv provides closer control over the creation of this matrix through the function, getRotaionMatrix2D.OpenCV provides closer control over the creation of this matrix through the function, getRotationMatrix2D . We can specify the point around which the image would be rotated, the angle of rotation in degrees, and a scaling factor for the image. Once we have the transformation matrix, we can use the warpAffine function to apply this matrix to any image.

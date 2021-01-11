@@ -11,7 +11,7 @@ Topics covered in this repositry are given below:-
 
 * <a href="https://github.com/Justsubh01/OpencvImageProcessing/tree/master/Geometric%20Translation/Image%20translation%2Crotation%2C%20scaling">Image translation,rotation, scaling</a>
 
-* Color Spaces
+* <a href="https://github.com/Justsubh01/OpencvImageProcessing/tree/master/Geometric%20Translation/Color%20Spaces">Color Spaces</a>
 * Affine and Projective transformations
 
 </details>

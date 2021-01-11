@@ -4,12 +4,13 @@ In computer vision and image processing, color space refers to a special way of 
 
 In OpenCv there are many different color spaces available, Some of the more popular color spaces are RGB,YUV,HSV and so on.
 
-*** RGB=>** Its probably the most popular color space. It stands for red, green and blue. Every pixel value is represented as a tuple of three numbers corresponding to red, green and blue, each value ranges between 0 and 255.
+***RGB=>** Its probably the most popular color space. It stands for red, green and blue. Every pixel value is represented as a tuple of three numbers corresponding to red, green and blue, each value ranges between 0 and 255.
 
 **YUV=>** Even though RGB is good for many purposes, it tends to be very limited for many real life applications. People started thinking about different methods to separate the intensity information from the color information. Hence, they came up with the YUV color space. Y refers to the luminance or intensity, and U/V channels represent color information. This works well in many applications because the human visual system perceives intensity information very differently from color information.
 
 **HSV=>** As it turned out, even YUV was still not good enough for some of the applications. So people started thinking about how humans perceive color and they came up with the HSV color space. HSV stands for Hue, Saturation, and Value. This is a cylindrical system where we separate three of the most primary properties of colors and represent them using different channels. This is closely related to how the human visual system understands color. This gives us a lot of flexibility as to how we can handle images.
 
+---
 Convert the images into grayscal image:
 
 ``` 
@@ -23,6 +24,8 @@ cv.waitKey()
 
 ![Gray Image](../../images/Gray.png)
 
+---
+
 Convert the images into YUV color space:
 
 ```
@@ -33,12 +36,16 @@ img_yuv = cv.cvtColor(img,cv.COLOR_BGR2YUV)
 
 ![YUV Image](../../images/YUV.png)
 
+---
+
 Convert image into HSV color space
 
 ```
 img_hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)
 ```
 ![HSV Image](../../images/HSV.png)
+
+---
 
 Lets do some fun things and make collage of YUV and HSV color spaces but with separate chennels:
 
@@ -57,6 +64,8 @@ cv.imshow("H,S and V chennels", horizontal_2)
 
 **YUV collage with Y, U and V chennels=>**
 ![HSV Collage](../../images/YUV_collage.png)
+
+---
 
 We can stack both image collage on top of each, with the help of numpy **vstack()**, Lets do it.
 
